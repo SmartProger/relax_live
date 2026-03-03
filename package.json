@@ -1,0 +1,23 @@
+{
+  "name": "relaxlive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartProger/relax_live.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartProger/relax_live/issues"
+  },
+  "homepage": "https://github.com/Smart-Proger/relax_live",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1"
+  }
+}
