@@ -490,6 +490,8 @@ template,
   width: 165px;
   height: 30px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header-contacts__phone-number-accord {
@@ -512,7 +514,7 @@ template,
 .header-contacts__phone-number-accord a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .header-contacts__arrow {
@@ -524,6 +526,7 @@ template,
 .header-contacts__arrow img {
   margin-top: 12px;
   margin-left: 5px;
+  transition: transform 0.5s;
 }
 
 .header-contacts__messagers {

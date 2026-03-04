@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("second")})();
+(()=>{"use strict";(()=>{const e=document.querySelector(".header-contacts__phone-number-wrap"),t=document.querySelector(".header-contacts__arrow"),r=t.querySelector("img");t.addEventListener("click",()=>{"30px"==window.getComputedStyle(e).height?(e.style.height="65px",r.style.transform="rotate(180deg)"):(e.style.height="30px",r.style.transform="rotate(0deg)")})})()})();

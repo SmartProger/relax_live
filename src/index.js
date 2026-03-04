@@ -1,2 +1,2 @@
-import { first } from "./modules/first";
-first();
+import { addPhone } from "./modules/addPhone";
+addPhone();
