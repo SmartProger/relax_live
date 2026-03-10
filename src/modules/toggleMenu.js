@@ -1,7 +1,6 @@
 export const toggleMenu = () => {
   const menu = document.querySelector(".popup-dialog-menu");
   const menuBtn = document.querySelector(".menu__icon");
-  const menuCloseBtn = document.querySelector(".close-menu");
 
   menuBtn.addEventListener("click", () => {
     if (document.documentElement.clientWidth > 575) {
@@ -13,12 +12,14 @@ export const toggleMenu = () => {
     menu.style.zIndex = "9999999";
   });
 
-  menuCloseBtn.addEventListener("click", () => {
-    if (document.documentElement.clientWidth > 575) {
-      menu.style.right = "0";
-    } else {
-      menu.style.transform = "translate3d(0, -100vh, 0)";
+  menu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("close-menu") || e.target.closest("a")) {
+      if (document.documentElement.clientWidth > 575) {
+        menu.style.right = "0";
+      } else {
+        menu.style.transform = "translate3d(0, -100vh, 0)";
+      }
+      menu.style.zIndex = "-9999999";
     }
-    menu.style.zIndex = "-9999999";
   });
 };
