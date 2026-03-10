@@ -5,19 +5,20 @@ export const toggleMenu = () => {
 
   menuBtn.addEventListener("click", () => {
     if (document.documentElement.clientWidth > 575) {
-      menu.style.right = "645px";
+      menu.style.right = getComputedStyle(menu).width;
     } else {
-      menu.style.top = "714px";
+      menu.style.transform = "translate3d(0, 0, 0)";
+      menu.style.top = 0;
     }
-    menu.style.zIndex = "999999999";
+    menu.style.zIndex = "9999999";
   });
 
   menuCloseBtn.addEventListener("click", () => {
     if (document.documentElement.clientWidth > 575) {
       menu.style.right = "0";
     } else {
-      menu.style.top = "0";
+      menu.style.transform = "translate3d(0, -100vh, 0)";
     }
-    menu.style.zIndex = "-999999999";
+    menu.style.zIndex = "-9999999";
   });
 };
